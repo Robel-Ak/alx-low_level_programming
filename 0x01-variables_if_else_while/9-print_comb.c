@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Entry 
+ * main - Entry
  *
  * Return: 0
  */
@@ -14,7 +14,7 @@ int main(void)
 		putchar(48 + c);
 		if (c != 9)
 		{
-			putchar(',');
+			putchar(', ');
 		}
 		c++;
 	}
