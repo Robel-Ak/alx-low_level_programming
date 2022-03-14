@@ -15,7 +15,6 @@ int main(void)
 		if (c != 9)
 		{
 			putchar(',');
-			putchar(',');
 		}
 		c++;
 	}
