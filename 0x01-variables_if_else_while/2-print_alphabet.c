@@ -2,14 +2,14 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description: 
+ * Description:
  * Return: 0
  */
 int main(void)
 {
 	char c = 'a';
 
-	while(c <= 'z')
+	while (c <= 'z')
 	{
 		putchar(c);
 		c++;
