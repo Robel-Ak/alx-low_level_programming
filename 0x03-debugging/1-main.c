@@ -15,7 +15,11 @@ int main(void)
 	 /*
 	 * while (i < 10)
 	 * {
+<<<<<<< HEAD
 	 *putchar(i);
+=======
+	 * putchar(i);
+>>>>>>> 0b5a7468ca6e512add1f8aef2952766bd6f88183
 	 * }
 	 */
 
