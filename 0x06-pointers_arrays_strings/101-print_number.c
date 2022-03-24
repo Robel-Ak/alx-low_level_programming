@@ -2,6 +2,7 @@
 
 /**
  * base10 - power in 10 base
+ * print_number - to print number
  * @n: an exponent
  * Return: returns 10 to power exponent
  */
