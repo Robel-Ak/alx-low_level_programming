@@ -1,16 +1,33 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
- * main - prints opcode of own main function
- *
- * @argc: argument count
- * @argv: arg value
- * Return: int
- */
-int main(int argc, char *argv[])
+ * print_opcodes - Print the opcodes of this program.
+ * @s: Address of the main function.
+ * @x: Number of bytes to print.
+ **/
+void print_opcodes(char *s, int x)
 {
-	int x, i;
-	unsigned char *p;
+	int i = 0;
+
+	for (i = 0; i < x; i++)
+	{
+		printf("%.2hhx", s[i]);
+		if (i < x - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
+
+/**
+ * main - Print the opcodes of this main function.
+ * @argc: Number of arguments.
+ * @argv: Arguments vector.
+ * Return: O (success).
+ */
+int main(int argc, char **argv)
+{
+	int x;
 
 	if (argc != 2)
 	{
@@ -23,13 +40,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	p = (unsigned char *)main;
-	i = 0;
-	if (x > 0)
-	{
-		while (i < (x - 1))
-			printf("%02hhx", p[i++]);
-		printf("%hhx\n", p[i]);
-	}
+	print_opcodes((char *)&main, x);
 	return (0);
 }
